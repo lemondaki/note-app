@@ -1,0 +1,52 @@
+.note {
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  span {
+    font-size: 1.6rem;
+  }
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .delete-icon,.edit-icon {
+    font-size: 2rem;
+    margin: 0 4px;
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+  small {
+    font-size: 1.6rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+  button {
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: none;
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+}
+
+.new {
+  background-color: aquamarine;
+  textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+}
+
+

@@ -1,0 +1,19 @@
+.search {
+  width: 100%;
+  min-height: 3.2rem;
+  display: flex;
+  align-items: center;
+  background-color: rgb(233 233 233);
+  border-radius: 2.6rem;
+  padding: 0 1.6rem;
+  input {
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0 8px;
+  }
+  .search-icon {
+    font-size: 2.2rem;
+  }
+}
