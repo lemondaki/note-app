@@ -34,10 +34,20 @@ function App() {
     setNotes(notes.filter((note) => note.id !== id));
   };
 
+  const editNote = (id, text) => {
+    setNotes((notes) => notes.map((note) => (note.id === id ? { ...note, text } : note)));
+  };
+
   return (
     <GlobalStyle toggleMode={toggleMode}>
       <Header setSearchInput={setSearchInput} setToggleMode={setToggleMode} />
-      <NoteList notes={filterNotes} addNote={addNote} deleteNote={deleteNote} />
+      <NoteList
+        notes={filterNotes}
+        addNote={addNote}
+        deleteNote={deleteNote}
+        onSetNotes={setNotes}
+        editNote={editNote}
+      />
     </GlobalStyle>
   );
 }
